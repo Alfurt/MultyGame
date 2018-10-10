@@ -3,12 +3,18 @@ var rightAns = 0;
 
 but.onclick = function()
 {
+  //*document.getElementById("but").classList.add("btn");
   var btn_text = document.getElementById("but").innerHTML;
   if(btn_text == "Проверить »")
   {
+    var ans = document.getElementById("answer").innerHTML.toLowerCase();
+    if(ans.trim() == '')
+    {
+      document.getElementById("answer").focus();
+      return;
+    }
     document.getElementById("answer").contentEditable = false;
     document.getElementById("but").innerHTML = "Дальше »";
-    var ans = document.getElementById("answer").innerHTML.toLowerCase();
 
     var compare;
     // -- Здесь все проверки --
