@@ -112,7 +112,7 @@ but.onclick = function()
       document.getElementById("but").classList.add("btnWrong");
     }
   }
-  else
+  else if(btn_text == "Дальше »")
   {
     questNum++;
     document.getElementById("title").innerHTML = "Вопрос #"+questNum;
@@ -166,8 +166,14 @@ but.onclick = function()
       document.getElementById("title").innerHTML = "Результат";
       document.getElementById("quest").innerHTML = "Правильно: " + 100*(rightAns/8) + "%";
       document.getElementById("pic").src = "";
+
+      document.getElementById("but").innerHTML = "Попробовать еще раз";
       //document.getElementById("answer").display = "none";
       //document.getElementById("but").display = "none";
     }
+  }
+  else
+  {
+    location.reload();
   }
 }
