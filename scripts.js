@@ -143,7 +143,7 @@ but.onclick = function()
             else if(questNum == 7)
               {
                 document.getElementById("quest").innerHTML = "Как зовут этого мишку?";
-                document.getElementById("pic").src = "https:pp.userapi.com/c850436/v850436663/1c060/LTMTckN_rEc.jpg";
+                document.getElementById("pic").src = "https://pp.userapi.com/c851236/v851236054/26dce/ymHfgdrT414.jpg";
               }
               else if(questNum == 8)
                 {
